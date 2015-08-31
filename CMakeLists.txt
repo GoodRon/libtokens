@@ -7,7 +7,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 set(GTEST_RESULT_ROOT ${CMAKE_CURRENT_BINARY_DIR}/Testing)
 include(CMake/gtest_helper.cmake)
-add_custom_target(gtests COMMAND ${CMAKE_CTEST_COMMAND} --verbose)
+add_custom_target(libtokens_gtests COMMAND ${CMAKE_CTEST_COMMAND} --verbose)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
